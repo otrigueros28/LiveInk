@@ -1,0 +1,50 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+  <script src="https://rawgit.com/kfarr/aframe-select-bar-component/master/dist/aframe-select-bar-component.min.js"></script>
+
+  <script src = '/dist/main.js' defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  div {
+    max-width: 100%;
+  }
+   form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    padding: 1rem;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+  }
+  nav > Link {
+    display: flex;
+    align-items: right;
+    align-content: right;
+  }
+
+  #options {
+    height: 15rem;
+    width: 15rem;
+  }
+  #arjsDebugUIContainer {
+  opacity: 0
+}
+.a-enter-vr-button{
+  opacity: 0;
+}
+</style>
+</head>
+<body>
+  <div id='root'></div>
+</body>
+</html>
